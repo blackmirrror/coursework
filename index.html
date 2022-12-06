@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>N с к у с с т в о</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Forum:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/1eea5a88db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <header id="header">
+            <img src="img/fullscreen/fullscreen3.jpg" class="fullscreen">
+            <div class="header">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo-img" class="logo-img">
+                    <a href="#header" class="link">N с к у с с т в о</a>
+                </div>
+                <nav>
+                    <a href="#header" class="link nav-link menu-link">Главная</a>
+                    <a href="#artists" class="link nav-link menu-link">Художники</a>
+                    <a href="#visiting" class="link nav-link menu-link">Посещение</a>
+                    <a href="gallery.html" class="link nav-link menu-link">Галерея</a>
+                    <a href="about.html" class="link nav-link menu-link">О нас</a>
+                    <a class="icon fa-solid fa-magnifying-glass fa-lg"></a>
+                    <a class="icon fa-solid fa-bars fa-lg burger"></a>
+                </nav>
+            </div>
+            <h1 class="welcome-title">Добро пожаловать в Nскусство</h1>
+            <a class="btn" href="#artists">Продолжить</a>
+            <div class="submenu">
+                <a href="#header" class="link nav-link submenu-link">Главная</a>
+                <a href="#artists" class="link nav-link submenu-link">Художники</a>
+                <a href="#visiting" class="link nav-link submenu-link">Посещение</a>
+                <a href="gallery.html" class="link nav-link submenu-link">Галерея</a>
+                <a href="about.html" class="link nav-link submenu-link">О нас</a>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="artists" id="artists">
+                <h2 class="block-title">Художники</h2>
+                <div class="artist">
+                    <img src="img/artists/van_gogh.jpg" alt="" class="artist-img">
+                    <div class="artist-des">
+                        <h2 class="artist-title">Винсент Ван Гог</h2>
+                        <p class="artist-text"><br>Эта фамилия знакома каждому школьнику. Ещё в детстве мы шутили между
+                            собой «рисуешь как Ван Гог»… Ведь бессмертен лишь тот, чье имя навсегда останется в истории
+                            не только живописи и мирового искусства, но и человечества.
+                        </p>
+                        <a href="artist.html" class="link nav-link" onclick="remember_current_artist(0)"><br>Подробнее
+                            &#129046;</a>
+                    </div>
+                </div>
+                <div class="artist">
+                    <div class="artist-des">
+                        <h2 class="artist-title">Леонардо да Винчи</h2>
+                        <p class="artist-text"><br>Знаменитый итальянский архитектор эпохи Возрождения,
+                            музыкант, изобретатель, инженер, скульптор и гениальный художник. Он широко известен своими
+                            уникальными картинами, такими как, «Мона Лиза» и «Тайная вечеря».
+                        </p>
+                        <a href="artist.html" class="link nav-link" onclick="remember_current_artist(1)"><br>Подробнее
+                            &#129046;</a>
+                    </div>
+                    <img src="img/artists/da_vinchi.jpg" alt="" class="artist-img">
+                </div>
+                <div class="artist">
+                    <img src="img/artists/santi.jpg" alt="" class="artist-img">
+                    <div class="artist-des">
+                        <h2 class="artist-title">Рафаэль Санти</h2>
+                        <p class="artist-text"><br>Все картины Рафаэля – яркое отражение его тонкой натуры. Никто из
+                            художников эпохи Возрождения так мастерски и глубоко не оживлял сюжеты своих картин.
+                            Вспомнить хотя бы настоящий шедевр искусства того времени «Сикстинскую мадонну».
+                        </p>
+                        <a href="artist.html" class="link nav-link" onclick="remember_current_artist(2)"><br>Подробнее
+                            &#129046;</a>
+                    </div>
+                </div>
+
+            </div>
+            <h2 class=" nav-link load_more" onclick="load_more()">Загрузить ещё</h2>
+
+            <div class="parallax-img"></div>
+
+            <div class="visiting" id="visiting">
+                <h2 class="block-title">Посещение</h2>
+                <div class="visiting-items">
+                    <a class="visiting-item" href="tour.html" onclick="remember_current_tour(0)">
+                        <img src="img/tours/tour1.jpg" alt="" class="visiting-img">
+                        <h2 class="visiting-title">Королевская палата</h2>
+                        <h2 class="visiting-des"><i class="fa-solid fa-clock"></i> Открыто: 10:00 -
+                            20:00</h2>
+                        <h2 class="visiting-end">360° Виртуальный тур</h2>
+                        <h2 class="visiting-end">Google Street Panorama</h2>
+                    </a>
+                    <a class="visiting-item" href="tour.html" onclick="remember_current_tour(1)">
+                        <img src="img/tours/tour2.jpg" alt="" class="visiting-img">
+                        <h2 class="visiting-title">Луврский дворец</h2>
+                        <h2 class="visiting-des"><i class="fa-solid fa-clock"></i> Открыто: 10:00 -
+                            18:00</h2>
+                        <h2 class="visiting-end">360° Виртуальный тур</h2>
+                        <h2 class="visiting-end">Google Street Panorama</h2>
+                    </a>
+                    <a class="visiting-item" href="tour.html" onclick="remember_current_tour(2)">
+                        <img src="img/tours/tour3.jpg" alt="" class="visiting-img">
+                        <h2 class="visiting-title">Колоннада Лувра</h2>
+                        <h2 class="visiting-des"><i class="fa-solid fa-clock"></i> Открыто: 10:00 -
+                            16:00</h2>
+                        <h2 class="visiting-end">360° Виртуальный тур</h2>
+                        <h2 class="visiting-end">Google Street Panorama</h2>
+                    </a>
+                    <a class="visiting-item" href="tour.html" onclick="remember_current_tour(3)">
+                        <img src="img/tours/tour4.jpg" alt="" class="visiting-img">
+                        <h2 class="visiting-title">Греческий зал</h2>
+                        <h2 class="visiting-des"><i class="fa-solid fa-clock"></i> Открыто: 10:00 -
+                            20:00</h2>
+                        <h2 class="visiting-end">360° Виртуальный тур</h2>
+                        <h2 class="visiting-end">Google Street Panorama</h2>
+                    </a>
+                    <a class="visiting-item" href="tour.html" onclick="remember_current_tour(4)">
+                        <img src="img/tours/tour5.jpg" alt="" class="visiting-img">
+                        <h2 class="visiting-title">Монна Лиза</h2>
+                        <h2 class="visiting-des"><i class="fa-solid fa-clock"></i> Открыто: 10:00 -
+                            20:00</h2>
+                        <h2 class="visiting-end">360° Виртуальный тур</h2>
+                        <h2 class="visiting-end">Google Street Panorama</h2>
+                    </a>
+                    <a class="visiting-item" href="tour.html" onclick="remember_current_tour(5)">
+                        <img src="img/tours/tour6.jpg" alt="" class="visiting-img">
+                        <h2 class="visiting-title">Ночная палата</h2>
+                        <h2 class="visiting-des"><i class="fa-solid fa-clock"></i> Открыто: 12:00 -
+                            20:00</h2>
+                        <h2 class="visiting-end">360° Виртуальный тур</h2>
+                        <h2 class="visiting-end">Google Street Panorama</h2>
+                    </a>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="footer-main" id="about">
+                <div class="footer-des1">
+                    <div class="f-logo">
+                        <img src="img/logo.png" alt="logo-img" class="logo-img">
+                    </div>
+                    <div class="footer-des11">
+                        <div class="partners">
+                            <h2 class="partners-title f-title">Наши партнеры</h2>
+                            <div class="partner-icons">
+                                <img src="img/logo/icons8-discord-100.png">
+                                <img src="img/logo/icons8-hbo-100.png">
+                                <img src="img/logo/icons8-amazon-100.png">
+                                <img src="img/logo/icons8-moodle-100.png">
+                                <img src="img/logo/icons8-netflix-100.png">
+                                <img src="img/logo/icons8-ted-100.png">
+                            </div>
+                        </div>
+                        <div class="address">
+                            <h2 class="f-text">Россия, Москва</h2>
+                            <h2 class="f-text">пр-кт Вернадского, 78</h2>
+                            <h2 class="f-text">+7(4952)33-21-01</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-des2">
+                    <div class="footer-des21">
+                        <div class="f-section">
+                            <h2 class="f-title">Сайт</h2>
+                            <a href="#header" class="f-text nav-link">Главная</a>
+                            <a href="#artists" class="f-text nav-link">Художники</a>
+                            <a href="#visiting" class="f-text nav-link">Посещение</a>
+                            <a href="gallery.html" class="f-text nav-link">Галерея</a>
+                            <a href="about.html" class="f-text nav-link">О нас</a>
+                        </div>
+                        <div class="f-section">
+                            <h2 class="f-title">Для гостей</h2>
+                            <h2 class="nav-link f-text">Поддержка</h2>
+                            <h2 class="nav-link f-text">Членство</h2>
+                            <h2 class="nav-link f-text">FAQ</h2>
+                            <h2 class="nav-link f-text">Реклама</h2>
+                        </div>
+                        <div class="f-section">
+                            <h2 class="f-title">Для клиентов</h2>
+                            <h2 class="nav-link f-text">Пожелания</h2>
+                            <h2 class="nav-link f-text">Подписка</h2>
+                            <h2 class="nav-link f-text">Предложения</h2>
+                            <h2 class="nav-link f-text">Пресса</h2>
+                        </div>
+                    </div>
+                    <div class="footer-des22">
+                        <div class="f-soc">
+                            <h2 class="f-title">Соцсети</h2>
+                            <i class="fa-brands fa-telegram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-vk"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div class="f-feedback">
+                            <h2 class="f-title">Подписка на новости</h2>
+                            <input placeholder="Email">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">&copy 2022-2023 Nскусство. Все права защищены</div>
+        </footer>
+    </div>
+    <script src="js/jsonwork.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+
+</html>
