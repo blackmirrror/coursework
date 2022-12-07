@@ -1,12 +1,13 @@
 // loading artists
 
-const artists = $('#artists');
+const artists = document.querySelector('#artists');
+const load = document.querySelector('.load_more');
 var count_load = 3;
 
 function load_more() {
     if (data.length > count_load) {
         if (count_load % 2 == 1)
-            artists.append(
+            artists.innerHTML +=
                 '<div class="artist">' +
                 '<div class="artist-des">' +
                 '<h2 class="artist-title">' + data[count_load].name + '</h2>' +
@@ -15,9 +16,9 @@ function load_more() {
                 '</div>' +
                 '<img src="' + data[count_load].main_img_res + '" alt="" class="artist-img">' +
                 '</div>'
-            );
+            ;
         else
-            artists.append(
+            artists.innerHTML +=
                 '<div class="artist">' +
                 '<img src="' + data[count_load].main_img_res + '" alt="" class="artist-img">' +
                 '<div class="artist-des">' +
@@ -26,11 +27,11 @@ function load_more() {
                 '<a href="artist.html" class="link nav-link" onclick="remember_current_artist(' + count_load + ')"><br>Подробнее &#129046;</a>' +
                 '</div>' +
                 '</div>'
-            );
+            ;
 
         count_load++;
         if (data.length == count_load)
-            $('.load_more').hide()
+            load.style.display = "none";
     }
 }
 
