@@ -41,12 +41,12 @@ function initHeader() {
 }
 
 function initBiography() {
-    const biography = $('.biography');
+    const biography = document.querySelector('.biography');
     for (let i = 0; i < data[cur_artist].biography.length; i++) {
         let temp = data[cur_artist].biography[i];
-        biography.append("<h2><br>" + temp.title + "</h2>");
+        biography.innerHTML += "<h2><br>" + temp.title + "</h2>";
         for (let des of temp.objects)
-            biography.append("<p><br>" + des + "</p>");
+            biography.innerHTML += "<p><br>" + des + "</p>";
     }
 }
 
