@@ -156,27 +156,6 @@ nav {
     padding: 0;
 }
 
-/* .welcome-title {
-    margin-top: 30vh;
-    font-size: 4rem;
-    align-self: center;
-    justify-self: center;
-} */
-
-@media (max-width: 1000px) {
-    .menu-link {
-        display: none;
-    }
-
-    .burger {
-        display: block;
-    }
-
-    .welcome-title {
-        font-size: 3rem;
-    }
-}
-
 /* CONTENT */
 
 
@@ -339,4 +318,43 @@ footer {
 
 ::placeholder {
     color: #fff;
+}
+
+@media (max-width: 559px) {
+    .welcome-title {
+        font-size: 15px;
+    }
+
+    .welcome-description {
+        font-size: 12px;
+    }
+
+    .subscribe h2 {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 560px) and (max-width: 900px) {
+
+    .welcome-title {
+        font-size: 20px;
+    }
+
+    .welcome-description {
+        font-size: 15px;
+    }
+
+    .subscribe h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu-link {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
 }
