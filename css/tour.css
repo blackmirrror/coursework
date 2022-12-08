@@ -53,6 +53,10 @@ img:hover {
     font-size: 1.5vw;
 }
 
+.show_text {
+    display: none;
+}
+
 @media (max-width: 1000px) {
     .show {
         border-top-right-radius: 0;
