@@ -49,8 +49,12 @@ img:hover {
     border: 1px solid white;
 }
 
-.show * {
+.show h2 {
     font-size: 1.5vw;
+}
+
+.show p {
+    font-size: 1.2vw;
 }
 
 .show_text {
@@ -70,7 +74,8 @@ img:hover {
         left: 180px;
     }
 
-    .show * {
+    .show h2,
+    .show p {
         font-size: 2vh;
     }
 }
